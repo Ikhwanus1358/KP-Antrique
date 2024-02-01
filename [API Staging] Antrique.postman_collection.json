@@ -1,0 +1,4251 @@
+{
+	"info": {
+		"_postman_id": "08ae7d10-aa18-4027-851c-023be5fef950",
+		"name": "[API Staging] Antrique",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Site Home",
+					"item": [
+						{
+							"name": "Site",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}site.php",
+									"host": [
+										"{{base_url_customer}}site",
+										"php"
+									]
+								},
+								"description": "Site Home"
+							},
+							"response": []
+						},
+						{
+							"name": "Banner",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}banner.php",
+									"host": [
+										"{{base_url_customer}}banner",
+										"php"
+									]
+								},
+								"description": "Endpoint banner"
+							},
+							"response": []
+						},
+						{
+							"name": "Blog",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}blog.php",
+									"host": [
+										"{{base_url_customer}}blog",
+										"php"
+									]
+								},
+								"description": "Endpoint blog"
+							},
+							"response": []
+						},
+						{
+							"name": "View Blog",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}viewBlog.php?blogId=3",
+									"host": [
+										"{{base_url_customer}}viewBlog",
+										"php"
+									],
+									"query": [
+										{
+											"key": "blogId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}kategori.php",
+									"host": [
+										"{{base_url_customer}}kategori",
+										"php"
+									]
+								},
+								"description": "Endpoint full kategori"
+							},
+							"response": []
+						},
+						{
+							"name": "Recommendation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}rekomendasi.php?inApp=AntriQue",
+									"host": [
+										"{{base_url_customer}}rekomendasi",
+										"php"
+									],
+									"query": [
+										{
+											"key": "inApp",
+											"value": "AntriQue"
+										}
+									]
+								},
+								"description": "Endpoint rekomendasi"
+							},
+							"response": []
+						},
+						{
+							"name": "Populer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}v2/populer.php?user_id=64&inApp=AntriQue&lat=-6.9451847&long=107.6547178",
+									"host": [
+										"{{base_url_customer}}v2"
+									],
+									"path": [
+										"populer.php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "64"
+										},
+										{
+											"key": "inApp",
+											"value": "AntriQue"
+										},
+										{
+											"key": "lat",
+											"value": "-6.9451847"
+										},
+										{
+											"key": "long",
+											"value": "107.6547178"
+										}
+									]
+								},
+								"description": "Endpoint populer"
+							},
+							"response": []
+						},
+						{
+							"name": "Category in site",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}kategoriSite.php",
+									"host": [
+										"{{base_url_customer}}kategoriSite",
+										"php"
+									]
+								},
+								"description": "Endpoint site category"
+							},
+							"response": []
+						},
+						{
+							"name": "Advertisement",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}advertisement.php",
+									"host": [
+										"{{base_url_customer}}advertisement",
+										"php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Suggestion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}suggestion.php",
+									"host": [
+										"{{base_url_customer}}suggestion",
+										"php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Suggestion Add",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}suggestionAdd.php?suggestion_id=1",
+									"host": [
+										"{{base_url_customer}}suggestionAdd",
+										"php"
+									],
+									"query": [
+										{
+											"key": "suggestion_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Merchant Vaksin",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}merchantVaksin.php",
+									"host": [
+										"{{base_url_customer}}merchantVaksin",
+										"php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fullname",
+											"value": "Daki",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "+628771994623222",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "luckylukhman2@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234567a",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}v2/register.php",
+									"host": [
+										"{{base_url_customer}}v2"
+									],
+									"path": [
+										"register.php"
+									]
+								},
+								"description": "Endpoint register"
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "password",
+											"value": "1234567a",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "+6282117975048",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}login.php",
+									"host": [
+										"{{base_url_customer}}login",
+										"php"
+									]
+								},
+								"description": "Endpoint login"
+							},
+							"response": []
+						},
+						{
+							"name": "Profile",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}profile.php?user_id=20968",
+									"host": [
+										"{{base_url_customer}}profile",
+										"php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "20968"
+										}
+									]
+								},
+								"description": "Endpoint view profile"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "+6287719946230",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "luckylukhman@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}editAkun.php",
+									"host": [
+										"{{base_url_customer}}editAkun",
+										"php"
+									]
+								},
+								"description": "Endpoint edit akun"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Password Account",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "password_lama",
+											"value": "1234567a",
+											"type": "text"
+										},
+										{
+											"key": "password_baru",
+											"value": "tester",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}editPassword.php",
+									"host": [
+										"{{base_url_customer}}editPassword",
+										"php"
+									]
+								},
+								"description": "Endpoint edit password"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "64",
+											"type": "text"
+										},
+										{
+											"key": "fullname",
+											"value": "Daki Pedrosa",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "luckylukhman@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "birth",
+											"value": "1994-10-09",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Laki-laki",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "bandung",
+											"type": "text"
+										},
+										{
+											"key": "img_profile",
+											"value": "https://antrique.com/images/user/71724-aasdpoi.jpg",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}editProfil.php",
+									"host": [
+										"{{base_url_customer}}editProfil",
+										"php"
+									]
+								},
+								"description": "Endpoint edit profile"
+							},
+							"response": []
+						},
+						{
+							"name": "Forgot Password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "luckylukhmanv2@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "inApp",
+											"value": "Bankpapua",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}forgotPassword.php",
+									"host": [
+										"{{base_url_customer}}forgotPassword",
+										"php"
+									]
+								},
+								"description": "Endpoint forgot password"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Photo Profile",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "img_profile",
+											"contentType": "",
+											"type": "file",
+											"src": "dHNXB9ZMQ/filter.png"
+										},
+										{
+											"key": "user_id",
+											"value": "20968",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}updateFotoProfile.php",
+									"host": [
+										"{{base_url_customer}}updateFotoProfile",
+										"php"
+									]
+								},
+								"description": "Endpoint update foro profile"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Merchant",
+					"item": [
+						{
+							"name": "Search Merchant",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}searchMerchant.php?keyword=&inApp=AntriQue&user_id=64",
+									"host": [
+										"{{base_url_customer}}searchMerchant",
+										"php"
+									],
+									"query": [
+										{
+											"key": "keyword",
+											"value": ""
+										},
+										{
+											"key": "inApp",
+											"value": "AntriQue"
+										},
+										{
+											"key": "user_id",
+											"value": "64"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Merchant Favorit",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}favorit.php?user_id=46&inApp=BankPapua",
+									"host": [
+										"{{base_url_customer}}favorit",
+										"php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "46"
+										},
+										{
+											"key": "inApp",
+											"value": "BankPapua"
+										}
+									]
+								},
+								"description": "Endpoint favorit"
+							},
+							"response": []
+						},
+						{
+							"name": "Love Merchant",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "kd_merchant",
+											"value": "KQ001",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}lovePopuler.php",
+									"host": [
+										"{{base_url_customer}}lovePopuler",
+										"php"
+									]
+								},
+								"description": "Endpoint love populer"
+							},
+							"response": []
+						},
+						{
+							"name": "View Merchant",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}viewMerchant.php?kd_merchant=OQ001",
+									"host": [
+										"{{base_url_customer}}viewMerchant",
+										"php"
+									],
+									"query": [
+										{
+											"key": "kd_merchant",
+											"value": "OQ001"
+										},
+										{
+											"key": "user_id",
+											"value": "",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Endpoint view merchant"
+							},
+							"response": []
+						},
+						{
+							"name": "View Service",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}service.php?service_code=b85e5j&date=2021-04-27",
+									"host": [
+										"{{base_url_customer}}service",
+										"php"
+									],
+									"query": [
+										{
+											"key": "service_code",
+											"value": "b85e5j"
+										},
+										{
+											"key": "date",
+											"value": "2021-04-27"
+										}
+									]
+								},
+								"description": "Endpoint service merchant"
+							},
+							"response": []
+						},
+						{
+							"name": "Report Merchant",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "file",
+									"file": {}
+								},
+								"url": {
+									"raw": "https://antrique.com/api-staging/reportMerchant.php",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"reportMerchant.php"
+									]
+								},
+								"description": "https://antrique.com/api-staging/reportMerchant.php"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ticket",
+					"item": [
+						{
+							"name": "Generate Ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "64",
+											"type": "text"
+										},
+										{
+											"key": "service_code",
+											"value": "4xctuh",
+											"type": "text"
+										},
+										{
+											"key": "queue_name",
+											"value": "Gun 3",
+											"type": "text"
+										},
+										{
+											"key": "service_time",
+											"value": "2021-04-15",
+											"type": "text"
+										},
+										{
+											"key": "conveyor",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "queue_hp",
+											"value": "08112392329",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}generateTicket.php",
+									"host": [
+										"{{base_url_customer}}generateTicket",
+										"php"
+									]
+								},
+								"description": "Endpoint Ticket"
+							},
+							"response": []
+						},
+						{
+							"name": "Monitoring Ticket",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}getTicket.php?unique_code=q4hnyt",
+									"host": [
+										"{{base_url_customer}}getTicket",
+										"php"
+									],
+									"query": [
+										{
+											"key": "unique_code",
+											"value": "q4hnyt"
+										}
+									]
+								},
+								"description": "Endpoint get ticket/monitoring antrian"
+							},
+							"response": []
+						},
+						{
+							"name": "Ticket on service",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}ticketService.php?service_code=3ocj8w&usid=1",
+									"host": [
+										"{{base_url_customer}}ticketService",
+										"php"
+									],
+									"query": [
+										{
+											"key": "service_code",
+											"value": "3ocj8w"
+										},
+										{
+											"key": "usid",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Endpoint ticket service"
+							},
+							"response": []
+						},
+						{
+							"name": "Same Ticket",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}getSameTicket.php?service_code=3ocj8w&user_id=1&queue_name=Gun&queue_time=2021-02-12",
+									"host": [
+										"{{base_url_customer}}getSameTicket",
+										"php"
+									],
+									"query": [
+										{
+											"key": "service_code",
+											"value": "3ocj8w"
+										},
+										{
+											"key": "user_id",
+											"value": "1"
+										},
+										{
+											"key": "queue_name",
+											"value": "Gun"
+										},
+										{
+											"key": "queue_time",
+											"value": "2021-02-12"
+										}
+									]
+								},
+								"description": "Endpoint get same ticket"
+							},
+							"response": []
+						},
+						{
+							"name": "Rate Ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "queue_code",
+											"value": "dqp4vhas",
+											"type": "text"
+										},
+										{
+											"key": "queue_rate",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "queue_review",
+											"value": "pelayanan baik",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://antrique.com/api-staging/rateTicket.php",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"rateTicket.php"
+									]
+								},
+								"description": "Endpoint Rate Ticket"
+							},
+							"response": []
+						},
+						{
+							"name": "Arrived",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "queue_code",
+											"value": "q4hnyt",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}queueArrived.php",
+									"host": [
+										"{{base_url_customer}}queueArrived",
+										"php"
+									]
+								},
+								"description": "Endpoint sudah sampai"
+							},
+							"response": []
+						},
+						{
+							"name": "Cancel",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "queue_code",
+											"value": "q4hnyt",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url_customer}}queueCancel.php",
+									"host": [
+										"{{base_url_customer}}queueCancel",
+										"php"
+									]
+								},
+								"description": "Endpoint batal ticket"
+							},
+							"response": []
+						},
+						{
+							"name": "Ticket Today",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}ticketToday.php?user_id=1635",
+									"host": [
+										"{{base_url_customer}}ticketToday",
+										"php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1635"
+										}
+									]
+								},
+								"description": "Endpoint ticket today"
+							},
+							"response": []
+						},
+						{
+							"name": "Ticket All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}ticketAll.php?user_id=1",
+									"host": [
+										"{{base_url_customer}}ticketAll",
+										"php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Endpoint ticket all"
+							},
+							"response": []
+						},
+						{
+							"name": "Ticket History",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}history.php?user_id=1&page=1",
+									"host": [
+										"{{base_url_customer}}history",
+										"php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Endpoint ticket history"
+							},
+							"response": []
+						},
+						{
+							"name": "Review Ticket",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}getReview.php?service_code=3ocj8w",
+									"host": [
+										"{{base_url_customer}}getReview",
+										"php"
+									],
+									"query": [
+										{
+											"key": "service_code",
+											"value": "3ocj8w"
+										}
+									]
+								},
+								"description": "Endpoint ticket review"
+							},
+							"response": []
+						},
+						{
+							"name": "Create Ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"service_code\":\"dwrkur\",\n    \"queue_name\":\"Lucky A\",\n    \"queue_phone\":\"08771994\",\n    \"service_datee\":\"asda\",\n    \"conveyor\":\"1\",\n    \"note\":\"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url_customer}}createTicket.php",
+									"host": [
+										"{{base_url_customer}}createTicket",
+										"php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Notification",
+					"item": [
+						{
+							"name": "Get Notif",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}getNotif.php?user_id=1",
+									"host": [
+										"{{base_url_customer}}getNotif",
+										"php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Endpoint get notif"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Token",
+					"item": [
+						{
+							"name": "Voucher",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://antrique.com/api-staging/voucher.php?user_id=2",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"voucher.php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Payment Channel Inquiry",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://antrique.com/api-staging/Payment/listChannel.php",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"Payment",
+										"listChannel.php"
+									]
+								},
+								"description": "https://dev.faspay.co.id/cvr/100001/10"
+							},
+							"response": []
+						},
+						{
+							"name": "Payment Post Data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "voucher_code",
+											"value": "Basic",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "channel_code",
+											"value": "801",
+											"type": "text"
+										},
+										{
+											"key": "channel_name",
+											"value": "BNI Virtual Account",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://antrique.com/api-staging/Payment/postTransaction.php",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"Payment",
+										"postTransaction.php"
+									]
+								},
+								"description": "https://dev.faspay.co.id/cvr/300011/10"
+							},
+							"response": []
+						},
+						{
+							"name": "Progress Transaction",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://antrique.com/api-staging/Payment/progressTransaction.php?user_id=2&status_transaction=1",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"Payment",
+										"progressTransaction.php"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "2"
+										},
+										{
+											"key": "status_transaction",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Notification Payment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"request\": \"Payment Notification\",\r\n  \"trx_id\": \"3329570800000141\",\r\n  \"merchant_id\": \"33295\",\r\n  \"merchant\": \"Antrique\",\r\n  \"bill_no\": \"451764\",\r\n  \"payment_reff\": \"null\",\r\n  \"payment_date\": \"2020-09-08 12:46:33\",\r\n  \"payment_status_code\": \"2\",\r\n  \"payment_status_desc\": \"Payment Sukses\",\r\n  \"bill_total\": \"15000\",\r\n  \"payment_total\": \"15000\",\r\n  \"payment_channel_uid\": \"708\",\r\n  \"payment_channel\": \"Danamon VA\",\r\n  \"signature\": \"7449a53721e22f71f3ee3e9ca450e25aabff34b9\"\r\n}"
+								},
+								"url": {
+									"raw": "https://antrique.com/api-staging/Payment/getNotifTransaction.php",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"Payment",
+										"getNotifTransaction.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Status Payment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "trx_id",
+											"value": "3329570800000141",
+											"type": "text"
+										},
+										{
+											"key": "bill_no",
+											"value": "451764",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://antrique.com/api-staging/Payment/statusTransaction.php",
+									"protocol": "https",
+									"host": [
+										"antrique",
+										"com"
+									],
+									"path": [
+										"api-staging",
+										"Payment",
+										"statusTransaction.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Help",
+					"item": [
+						{
+							"name": "Help List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}help.php",
+									"host": [
+										"{{base_url_customer}}help",
+										"php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Help",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}detailHelp.php?id=1005",
+									"host": [
+										"{{base_url_customer}}detailHelp",
+										"php"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1005"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Help",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}searchHelp.php?keyword=antrique",
+									"host": [
+										"{{base_url_customer}}searchHelp",
+										"php"
+									],
+									"query": [
+										{
+											"key": "keyword",
+											"value": "antrique"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sub Help",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_customer}}subHelp.php?id=1005",
+									"host": [
+										"{{base_url_customer}}subHelp",
+										"php"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1005"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Merchant",
+			"item": [
+				{
+					"name": "Token",
+					"item": [
+						{
+							"name": "Client Credentials",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Merchant AntriQue",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "4ntr1qu3=-",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_merchant_url}}/jwt/token",
+									"host": [
+										"{{base_merchant_url}}"
+									],
+									"path": [
+										"jwt",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "Login",
+							"item": [
+								{
+									"name": "Login",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\": \"demoantrique1\",\r\n    \"password\": \"1234567a\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/login",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Register",
+							"item": [
+								{
+									"name": "Register",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"merchant_name\": \"Merch Baru\",\r\n    \"merchant_category\": \"Acara\",\r\n    \"service_name\": \"Teller\",\r\n    \"phone\": \"87719946233\",\r\n    \"password\": \"123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/register",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"register"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Merchant Category",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/category?page=1&size=20",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"category"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "20"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Province",
+							"item": [
+								{
+									"name": "Province",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_merchant_url}}/province",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"province"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Password",
+					"item": [
+						{
+							"name": "Queue",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/queue?page=1&size=20&service_date=2021-04-30&queue_status=7",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"queue"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "20"
+												},
+												{
+													"key": "service_id",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "service_date",
+													"value": "2021-04-30"
+												},
+												{
+													"key": "queue_no",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "unique_code",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "queue_name",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "queue_status",
+													"value": "7"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "view",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/queue/view?id=1429",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"queue",
+												"view"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1429"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "service_id",
+													"value": "198",
+													"type": "text"
+												},
+												{
+													"key": "registrant_name",
+													"value": "Dani Pedrosatut",
+													"type": "text"
+												},
+												{
+													"key": "conveyor",
+													"value": "0",
+													"type": "text"
+												},
+												{
+													"key": "registrant_phone",
+													"value": "87719946233",
+													"type": "text"
+												},
+												{
+													"key": "note",
+													"value": "ini isi note",
+													"type": "text"
+												},
+												{
+													"key": "queue_date",
+													"value": "2021-04-19",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/queue/create",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"queue",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get ticket",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/queue/getTicket?id=CjRg2F",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"queue",
+												"getTicket"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "CjRg2F"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "confirm",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/queue/confirm?id=795863",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"queue",
+												"confirm"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "795863"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Counter",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/counter?page=1&size=20",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "20"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "view",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/counter/view?id=244",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter",
+												"view"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "244"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "replace",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_merchant_url}}/counter/replace?id=120",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter",
+												"replace"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "120"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "next",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"counter_id\":\"47\",\r\n    \"service_id\":\"41\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/counter/next",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter",
+												"next"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "served",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"queue_code\":\"A009\",\r\n    \"service_id\":198\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/counter/served",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter",
+												"served"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "done",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"queue_code\":\"A009\",\r\n    \"service_id\":198\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/counter/done",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter",
+												"done"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "no show",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"queue_code\":\"C001\",\r\n    \"service_id\":\"2\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/counter/noShow",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter",
+												"noShow"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "cancel",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"queue_code\":\"G008\",\r\n    \"service_id\":\"41\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/counter/cancel",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"counter",
+												"cancel"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Service",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/service?page=1&size=20",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "20"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "view",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/service/view?id=41",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service",
+												"view"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "41"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Switch",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/service/switchOpen?id=1",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service",
+												"switchOpen"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"service_id\" : \"198\",\r\n    \"announcement\": \"ini diganti yah pengumumannya\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/service/update",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "next",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/service/next?id=41",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service",
+												"next"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "41"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "served",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/service/served?id=41&queue_id=16252&counter_id=47",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service",
+												"served"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "41"
+												},
+												{
+													"key": "queue_id",
+													"value": "16252"
+												},
+												{
+													"key": "counter_id",
+													"value": "47"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "done",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/service/done?id=41&queue_id=16252&counter_id=47",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service",
+												"done"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "41"
+												},
+												{
+													"key": "queue_id",
+													"value": "16252"
+												},
+												{
+													"key": "counter_id",
+													"value": "47"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "no show",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/service/noshow?id=41&queue_id=16252&counter_id=47",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"service",
+												"noshow"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "41"
+												},
+												{
+													"key": "queue_id",
+													"value": "16252"
+												},
+												{
+													"key": "counter_id",
+													"value": "47"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Profile",
+							"item": [
+								{
+									"name": "view",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/user/view",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"user",
+												"view"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"merchant_name\":\"Merch tester\",\r\n    \"phone\":\"87719946233\",\r\n    \"address\":\"Address Merch\",\r\n    \"open_time\":\"08:00\",\r\n    \"close_time\":\"10:00\",\r\n    \"service_name\":\"Service tester\",\r\n    \"note\":\"note diedit\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/user/update",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"user",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update Logo",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "image_logo",
+													"type": "file",
+													"src": "/D:/Project/STUDIO/Cikan/Instagram Post/Logo IG.png"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}user/updateLogo",
+											"host": [
+												"{{base_merchant_url}}user"
+											],
+											"path": [
+												"updateLogo"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update Banner",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "banner_image",
+													"type": "file",
+													"src": "/D:/bankabc.jpg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/user/updateBanner",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"user",
+												"updateBanner"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update token fcm",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/user/regToken",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"user",
+												"regToken"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "list inbox notification",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/inboxNotif?page=1&size=10",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"inboxNotif"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "remove token fcm",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/user/removeToken",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"user",
+												"removeToken"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "inbox read",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_merchant_url}}/inboxRead",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"inboxRead"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Merchant",
+							"item": [
+								{
+									"name": "view",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/merchant/view?id=52",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"merchant",
+												"view"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "52"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "overview",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{merch_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{base_merchant_url}}/merchant/overview?date=2021-03-09",
+											"host": [
+												"{{base_merchant_url}}"
+											],
+											"path": [
+												"merchant",
+												"overview"
+											],
+											"query": [
+												{
+													"key": "date",
+													"value": "2021-03-09"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Merchant Lite",
+			"item": []
+		},
+		{
+			"name": "Kiosk / Machine",
+			"item": [
+				{
+					"name": "Token",
+					"item": [
+						{
+							"name": "Client Credentials",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody)\r",
+											"if (jsonData) {\r",
+											"    pm.environment.set('machine_access_token', jsonData.token)\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Machine AntriQue",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "4ntr1qu3=-",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_machine_url}}/jwt/token",
+									"host": [
+										"{{base_machine_url}}"
+									],
+									"path": [
+										"jwt",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "Login",
+							"item": [
+								{
+									"name": "Login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var jsonData = JSON.parse(responseBody)\r",
+													"if (jsonData) {\r",
+													"    pm.environment.set('machine_client_token', jsonData.access_token)\r",
+													"}"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{machine_access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\": \"bricutmutiah\",\r\n    \"password\": \"bricutmutiah\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_machine_url}}login",
+											"host": [
+												"{{base_machine_url}}login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Password",
+					"item": [
+						{
+							"name": "Queue",
+							"item": [
+								{
+									"name": "view",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{machine_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_machine_url}}/queue/view?id=16066",
+											"host": [
+												"{{base_machine_url}}"
+											],
+											"path": [
+												"queue",
+												"view"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "16066"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{machine_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "service_id",
+													"value": "198",
+													"type": "text"
+												},
+												{
+													"key": "registrant_name",
+													"value": "Lucky Lukh",
+													"type": "text"
+												},
+												{
+													"key": "conveyor",
+													"value": "0",
+													"type": "text"
+												},
+												{
+													"key": "registrant_phone",
+													"value": "87719946233",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_machine_url}}/queue/create",
+											"host": [
+												"{{base_machine_url}}"
+											],
+											"path": [
+												"queue",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Merchant",
+							"item": [
+								{
+									"name": "view",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{machine_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{base_machine_url}}/merchant/view",
+											"host": [
+												"{{base_machine_url}}"
+											],
+											"path": [
+												"merchant",
+												"view"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "New Customer",
+			"item": [
+				{
+					"name": "Token",
+					"item": [
+						{
+							"name": "client credentials",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "Customer AntriQue",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "4ntr1qu3=-",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/jwt/token",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jwt",
+										"token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "Register",
+							"item": [
+								{
+									"name": "Send OTP",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cus_access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"phone\":\"+6289655250952\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}sendOtp",
+											"host": [
+												"{{base_url}}sendOtp"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Register",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cus_access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"fullname\":\"Lucky Ganteng\",\r\n    \"phone\":\"81313125211\",\r\n    \"email\":\"luckyy@ganteng.com\",\r\n    \"password\":\"123\",\r\n    \"password_confirmation\":\"123\",\r\n    \"otp_code\":\"9284\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}register",
+											"host": [
+												"{{base_url}}register"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"item": [
+								{
+									"name": "Login",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"phone\":\"8158808834\",\r\n    \"password\":\"1234567a\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/login",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"login"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Home",
+							"item": [
+								{
+									"name": "Site",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/home/site",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"home",
+												"site"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Banner",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/home/banner",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"home",
+												"banner"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Category",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/home/category",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"home",
+												"category"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Recomendation",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/home/recomendation",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"home",
+												"recomendation"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Populer",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/home/populer",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"home",
+												"populer"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Populer After Login",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/home/populer",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"home",
+												"populer"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Populer Before Login",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/home/populer",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"home",
+												"populer"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Category",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/category?page=1&size=8",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"category"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "8"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/category/view?id=1",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"category",
+												"view"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Merchant",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/merchant?page=1&size=10",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"merchant"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}} ",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/merchant/view?code=OQ001",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"merchant",
+												"view"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "OQ001"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Service",
+							"item": [
+								{
+									"name": "View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}} ",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/service/view?code=p8wvvm&date=2020-11-27",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"service",
+												"view"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "p8wvvm"
+												},
+												{
+													"key": "date",
+													"value": "2020-11-27"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Blog",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/blog",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"blog"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_access_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/blog/view?id=1",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"blog",
+												"view"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Password",
+					"item": [
+						{
+							"name": "User",
+							"item": [
+								{
+									"name": "Profile",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/profile",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"profile"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Profile",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"fullname\":\"Lucky Ganteng\",\r\n    \"email\":\"lu@kyy.com\",\r\n    \"birth\":\"1994-10-28\",\r\n    \"gender\":\"Laki-Laki\",\r\n    \"bio\":\"Testing ini mah\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/user/updateProfile",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"user",
+												"updateProfile"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Foto",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "image_profile_url",
+													"type": "file",
+													"src": "/D:/Images/aaaaaa.png"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}/user/updateFoto",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"user",
+												"updateFoto"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Edit Account",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"phone\":\"9987654321\",\r\n    \"email\":\"luc@kyy.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/user/updateAccount",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"user",
+												"updateAccount"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Password",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"last_password\":\"123\",\r\n    \"new_password\":\"122\",\r\n    \"password_confirmation\":\"122\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/user/updatePassword",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"user",
+												"updatePassword"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Account",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/user/delete",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"user",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Forgot Password",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "email",
+													"value": "luckylukhman@gmail.com",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}/forgotPassword",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"forgotPassword"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Token Fcm",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"token\":\"123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/user/regToken",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"user",
+												"regToken"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Merchant",
+							"item": [
+								{
+									"name": "Favorit",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/favorit",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"favorit"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/merchant?page=1&size=10&keyword=abc",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"merchant"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "10"
+												},
+												{
+													"key": "keyword",
+													"value": "abc"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/merchant/view?code=OQ001",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"merchant",
+												"view"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "OQ001"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Love",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{cust_client_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/merchant/love?code=BQ001",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"merchant",
+												"love"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "BQ001"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Service",
+							"item": [
+								{
+									"name": "View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/service/view?code=varq2b&date=2021-01-14",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"service",
+												"view"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "varq2b"
+												},
+												{
+													"key": "date",
+													"value": "2021-01-14"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Ticket",
+							"item": [
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "service_code",
+													"value": "0dergf",
+													"type": "text"
+												},
+												{
+													"key": "queue_name",
+													"value": "Adi",
+													"type": "text"
+												},
+												{
+													"key": "queue_hp",
+													"value": "+629987654321",
+													"type": "text"
+												},
+												{
+													"key": "queue_time",
+													"value": "2021-02-10",
+													"type": "text"
+												},
+												{
+													"key": "conveyor",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "note",
+													"value": "tes",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}/queue/create",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/view?code=imvo4g",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"view"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "imvo4g"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Arrived",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/arrived?code=imvo4g",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"arrived"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "imvo4g"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Cancel",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/cancel?code=imvo4g",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"cancel"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "imvo4g"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Rate",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "queue_code",
+													"value": "b7dxvf",
+													"type": "text"
+												},
+												{
+													"key": "queue_rate",
+													"value": "5",
+													"type": "text"
+												},
+												{
+													"key": "queue_review",
+													"value": "Keren",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}/queue/rate",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"rate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Today",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/today?page=1&size=2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"today"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "All",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/all?page=1&size=2",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"all"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "History",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/history?page=1&size=10",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"history"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "size",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Recent",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/recent",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"recent"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Active",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{cust_client_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/queue/active",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"queue",
+												"active"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
